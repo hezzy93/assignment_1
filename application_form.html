@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altschool Application Form</title>
+    <style>
+       a {
+    text-decoration: none;
+} 
+    </style>
+</head>
+<body>
+    <nav><a href="./index_page.html">Home  page</a></nav>
+    <form action="submit.php" method="post">
+        <h1>Application Form</h1>
+        <p>Fill in your details</p>
+        <p>
+            <div>
+            <div style="float: left; width: 50%;">
+                <label for="name" style="display: block;">First Name <span style="color: red;">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="Enter your first name">
+            </div>
+            <div style="float: left; width: 50%;">
+                <label for="last_name" style="display: block;">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required placeholder="Enter your last name">
+            </div>
+                <div style="clear: both;"></div>
+        </div>
+    </p>
+    <p>
+        <div>
+            <div style="float: left; width: 50%;">
+            <label for="gender" style="display: block;">Gender <span style="color: red;">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <div style="float: left; width: 50%;">
+            <label for="Date of Birth" style="display: block;">Date of Birth <span style="color: red;">*</span></label>
+            <input type="date" id="Date of Birth" name="Date of Birth" required placeholder="mm/dd/yyyy">
+        </div>
+        <div style="clear: both;"></div>
+    </p>
+        <p>
+            <div>
+                <div style="float: left; width: 50%;">
+                    <label for="email" style="display: block;">Email Address <span style="color: red;">*</span></label>
+                    <input type="text" id="email" name="email" required placeholder="Enter email address">
+                </div>
+                <div>
+                    <div style="float: left; width: 50%;">
+                    <label for="Education Level" style="display: block;">Select level of education <span style="color: red;">*</span></label>
+                    <select id="Education Level" name="Education Level" required>
+                        <option value="" disabled selected>Select Education Level</option>
+                        <option value="High School / Secondary School">High School / Secondary School</option>
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="Junior / Middle School">Junior / Middle School</option>
+                        <option value="Post Graduate">Post Graduate</option>
+                    </select>
+                </div>
+                <div style="clear: both;"></div>  
+            </p>
+
+            <p>
+                
+                    <div>
+                        <div style="float: left; width: 50%;">
+                        <label for="Country" style="display: block;">Country <span style="color: red;">*</span></label>
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="am">America</option>
+                            <option value="gh">Ghana</option>
+                            <option value="ot">others</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div style="float: left; width: 50%;">
+                            <label for="state" style="display: block;">State/City of Residence <span style="color: red;">*</span></label>
+                            <input type="text" id="state" name="state" required placeholder="Enter your state of residence">
+                        </div>
+                    <div style="clear: both;"></div>  
+                </p>
+                <p>
+                    <div>
+                        <div style="float: left; width: 50%;">
+                        <label for="Employment" style="display: block;">Employment Status <span style="color: red;">*</span></label>
+                        <select id="Employment" name="Employment" required>
+                            <option value="" disabled selected>Select employment status</option>
+                            <option value="Em">Employed</option>
+                            <option value="um">Unemployed</option>
+                            <option value="self_employed">Self Employed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div style="float: left; width: 50%;">
+                            <label for="state" style="display: block;">Phone Number <span style="color: red;">*</span></label>
+                            <input type="number" id="number" name="number" required placeholder="08155667402">
+                        </div>
+                    <div style="clear: both;"></div>    
+                </p>
+                <p>
+                    <div>
+                        <div style="float: left; width: 50%;">
+                        <label for="School" style="display: block;">Choose School <span style="color: red;">*</span></label>
+                        <select id="School" name="School" required>
+                            <option value="" disabled selected>Select school</option>
+                            <option value="Engineering">School of Engineering</option>
+                            <option value="Product">School of Product</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div style="float: left; width: 50%;">
+                            <label for="Course" style="display: block;">Choose Course of Study <span style="color: red;">*</span></label>
+                            <select id="School" name="School" required>
+                                <option value="" disabled selected>Select Course</option>
+                                <option value="Backend_Engineering">Backend Engineering</option>
+                                <option value="Frontend_Engineering">Frontend Engineering</option>
+                                <option value="Product Design">Product Design</option>
+                            </select>
+                        </div>
+                    <div style="clear: both;"></div>    
+                </p>
+                <p>
+                    <div>
+                        <div style="float: left; width: 50%;">
+                        <label for="About" style="display: block;">How did you hear about us? <span style="color: red;">*</span></label>
+                        <select id="About" name="About" required>
+                            <option value="" disabled selected>Select channel</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Facebook">Facebook</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div style="float: left; width: 50%;">
+                <label for="Discount" style="display: block;">Scholarship/Discount Code (optional) </label>
+                <input type="text" id="discount_code" name="discount_code" required placeholder="Scholarship or discount codes">
+                        </div>
+                    <div style="clear: both;"></div>    
+                </p>
+                <p>By clicking <a href="continue_link"><button>continue</button> </a> I agree to  <a href="terms-link">Terms of Use</a> and acknowledge that I have read the <a href="Privacy_Policy_form_link">Privacy Policy form.</a></p>
+
+
+                <p>Already have an account? <a href="sign_in_page">Sign In</a></p>
+    
+        
+</body>
+</html>
